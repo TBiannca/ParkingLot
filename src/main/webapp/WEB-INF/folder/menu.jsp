@@ -59,6 +59,12 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
+       <li>
+          <a class="nav-link" href="${pageContext.request.contextPath}/Cars">Cars</a>
+      </li>
+      <li class="nav-item" ${pageContext.request.requestURI eq 'ParkingLot/about.jsp' ? 'active' : ''}">
+          <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
+      </li>
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
