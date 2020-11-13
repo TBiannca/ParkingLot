@@ -23,9 +23,14 @@ import javax.persistence.Table;
 @Table(name="CARS")
 public class Car implements Serializable {
 
-    public void setLicensePalte(String licensePalte) {
-        this.licensePalte = licensePalte;
+    public String getLicensePlate() {
+        return licensePlate;
     }
+
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+
 
     public void setParkingSpot(String parkingSpot) {
         this.parkingSpot = parkingSpot;
@@ -37,10 +42,6 @@ public class Car implements Serializable {
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
-    }
-
-    public String getLicensePalte() {
-        return licensePalte;
     }
 
     public String getParkingSpot() {
@@ -56,7 +57,7 @@ public class Car implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String licensePalte;
+    private String licensePlate;
     private String parkingSpot;
     
     @ManyToOne(fetch = FetchType.LAZY)
