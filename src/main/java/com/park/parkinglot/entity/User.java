@@ -73,6 +73,7 @@ public class User implements Serializable {
     
     @OneToMany(mappedBy="user")
     private Collection<Car> cars;
+    
     public Integer getId() {
         return id;
     }

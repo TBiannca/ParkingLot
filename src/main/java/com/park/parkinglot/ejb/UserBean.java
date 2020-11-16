@@ -30,7 +30,7 @@ public class UserBean {
     public List<UserDetails> getAllUsers() {
         LOG.info("getAllUsers");
         try {
-            Query query=em.createQuery("SELECT c FROM Car c");
+            Query query=em.createQuery("SELECT u FROM User u");
             List<User> users = (List<User>) query.getResultList();
             return copyUsersToDetails(users);
         } catch (Exception ex) {

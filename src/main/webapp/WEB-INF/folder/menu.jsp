@@ -62,6 +62,9 @@
        <li>
           <a class="nav-link" href="${pageContext.request.contextPath}/Cars">Cars</a>
       </li>
+             <li>
+          <a class="nav-link" href="${pageContext.request.contextPath}/Users">Users</a>
+      </li>
   
     </ul>
     <ul class="navbar-nav ml-auto">
