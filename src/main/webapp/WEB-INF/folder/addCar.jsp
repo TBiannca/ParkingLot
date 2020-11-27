@@ -2,7 +2,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<t:pageTamplate pageTitle="Add Cars">
+<t:pageTemplate pageTitle="Add Cars">
     <h1>Add Car</h1>
      <form class="needs-validation" novalidate method="POST" action="${pageContext.request.contextPath}/AddCar">
         <div>
@@ -39,7 +39,7 @@
            </div>
        </form>
 
-</t:pageTamplate>
+</t:pageTemplate>
 
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields

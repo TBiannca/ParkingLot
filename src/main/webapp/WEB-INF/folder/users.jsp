@@ -2,7 +2,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<t:pageTamplate pageTitle="Users">
+<t:pageTemplate pageTitle="Users">
    <h1>Users</h1>
    <c:forEach var="user" items="${users}" varStatus="status">
       <div class="row">
@@ -17,7 +17,7 @@
           </div>
        </div>
    </c:forEach>
-</t:pageTamplate>
+</t:pageTemplate>
 
    <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
