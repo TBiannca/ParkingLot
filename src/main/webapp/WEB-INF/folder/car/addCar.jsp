@@ -13,6 +13,7 @@
               License Plate is required.
             </div>
           </div>
+          </div>
           <div class="col-md-6 mb-3">
             <label for="parking_spot">Parking spot</label>
             <input type="text" class="form-control" id="parking_spot" name="parking_spot" placeholder="" value="" required>
@@ -20,7 +21,6 @@
               Parking spot is required.
             </div>
           </div>
-        </div>
          <div>
           <div class="col-md-6 mb-3">
             <label for="owner_id">Owner</label>
@@ -33,6 +33,7 @@
             <div class="invalid-feedback">
               Please select a valid owner.
             </div>
+          </div>
           </div>
            <div class="col-md-6 mb-3">
           <button class="btn btn-primary btn-lg btn-block" type="submit">Save</button>
